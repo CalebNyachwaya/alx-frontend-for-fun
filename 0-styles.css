@@ -6,34 +6,46 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  font-size: 100%;
-}
-
 body {
+  height: 100vh;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 ul {
-  display: flex;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  list-style: none;
+  place-items: center;
 }
 
 li {
-  font-weight: bold;
-  display: inline-block;
-  border: 1px solid #00000070;
-  height: 160px;
-  width: 100px;
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: #f7f7f7;
+  border: solid rgba(0, 0, 0, 0.452) 1px;
+  height: 550px;
+  width: 300px;
+  background: #f7f7f7;
+  grid-template-rows: 1fr 2.5fr;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
 }
 
-img {
-  width: 90%;
-  object-fit: cover;
-  vertical-align: bottom;
-  margin-top: 5px;
+span {
+  height: 100%;
+  width: 220px;
+  padding: 50px;
+  background-color: aqua;
+}
+
+.i-html {
+  background: url("0-sprite.png") no-repeat -30px -40px;
+}
+
+.i-css {
+  background: url("0-sprite.png") no-repeat -320px -40px;
+}
+
+.i-js {
+  background: url("0-sprite.png") no-repeat -610px -40px;
 }
